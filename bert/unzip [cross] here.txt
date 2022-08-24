@@ -1,0 +1,13 @@
+unzip [cross] here
+
+├─bert
+│  │
+│  │  
+│  └─cross
+│          bert_config.json
+│          eval_results.txt
+│          pytorch_model.bin
+│          special_tokens_map.json
+│          tokenizer_config.json
+│          training_args.bin
+│          vocab.txt

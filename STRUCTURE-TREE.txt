@@ -1,0 +1,201 @@
+TransProto
+©¦  all_bert_bridge.sh
+©¦  data_utils.py
+©¦  embedding.py
+©¦  evaluation.py
+©¦  frq.py
+©¦  modeling_customize.py
+©¦  retrieve_time.py
+©¦  syntactic_dict.py
+©¦  train_bert_bridge.py
+©¦  tree.txt
+©¦  utils_bert_bridge.py
+©¦  
+©À©¤bert
+©¦  ©¦  unzip [cross] here.txt
+©¦  ©¦  
+©¦  ©¸©¤cross
+©¦          bert_config.json
+©¦          eval_results.txt
+©¦          pytorch_model.bin
+©¦          special_tokens_map.json
+©¦          tokenizer_config.json
+©¦          training_args.bin
+©¦          vocab.txt
+©¦          
+©À©¤data
+©¦  ©¦  cross_embedding.npy
+©¦  ©¦  cross_emb_oov.txt
+©¦  ©¦  cross_word_oov.txt
+©¦  ©¦  dep.dict
+©¦  ©¦  frq_dict.txt
+©¦  ©¦  polarity_dict.txt
+©¦  ©¦  pos.dict
+©¦  ©¦  word2id.txt
+©¦  ©¦  
+©¦  ©À©¤device
+©¦  ©¦  ©À©¤test
+©¦  ©¦  ©¦      aspect.txt
+©¦  ©¦  ©¦      dep.graph
+©¦  ©¦  ©¦      device-to-device-prototype-tau3.txt
+©¦  ©¦  ©¦      device-to-laptop-prototype-tau3.txt
+©¦  ©¦  ©¦      device-to-restaurant-prototype-tau3.txt
+©¦  ©¦  ©¦      device-to-service-prototype-tau3.txt
+©¦  ©¦  ©¦      polarity.txt
+©¦  ©¦  ©¦      pos.txt
+©¦  ©¦  ©¦      sentence.txt
+©¦  ©¦  ©¦      
+©¦  ©¦  ©¸©¤train
+©¦  ©¦          aspect.txt
+©¦  ©¦          dep.graph
+©¦  ©¦          device-to-device-prototype-tau3.txt
+©¦  ©¦          device-to-laptop-prototype-tau3.txt
+©¦  ©¦          device-to-restaurant-prototype-tau3.txt
+©¦  ©¦          device-to-service-prototype-tau3.txt
+©¦  ©¦          polarity.txt
+©¦  ©¦          pos.txt
+©¦  ©¦          sentence.txt
+©¦  ©¦          
+©¦  ©À©¤laptop
+©¦  ©¦  ©À©¤test
+©¦  ©¦  ©¦      aspect.txt
+©¦  ©¦  ©¦      dep.graph
+©¦  ©¦  ©¦      laptop-to-device-prototype-tau3.txt
+©¦  ©¦  ©¦      laptop-to-laptop-prototype-tau3.txt
+©¦  ©¦  ©¦      laptop-to-restaurant-prototype-tau3.txt
+©¦  ©¦  ©¦      laptop-to-service-prototype-tau3.txt
+©¦  ©¦  ©¦      polarity.txt
+©¦  ©¦  ©¦      pos.txt
+©¦  ©¦  ©¦      sentence.txt
+©¦  ©¦  ©¦      
+©¦  ©¦  ©¸©¤train
+©¦  ©¦          aspect.txt
+©¦  ©¦          dep.graph
+©¦  ©¦          laptop-to-device-prototype-tau3.txt
+©¦  ©¦          laptop-to-laptop-prototype-tau3.txt
+©¦  ©¦          laptop-to-restaurant-prototype-tau3.txt
+©¦  ©¦          laptop-to-service-prototype-tau3.txt
+©¦  ©¦          polarity.txt
+©¦  ©¦          pos.txt
+©¦  ©¦          sentence.txt
+©¦  ©¦          
+©¦  ©À©¤restaurant
+©¦  ©¦  ©À©¤test
+©¦  ©¦  ©¦      aspect.txt
+©¦  ©¦  ©¦      dep.graph
+©¦  ©¦  ©¦      polarity.txt
+©¦  ©¦  ©¦      pos.txt
+©¦  ©¦  ©¦      restaurant-to-device-prototype-tau3.txt
+©¦  ©¦  ©¦      restaurant-to-laptop-prototype-tau3.txt
+©¦  ©¦  ©¦      restaurant-to-restaurant-prototype-tau3.txt
+©¦  ©¦  ©¦      restaurant-to-service-prototype-tau3.txt
+©¦  ©¦  ©¦      sentence.txt
+©¦  ©¦  ©¦      
+©¦  ©¦  ©¸©¤train
+©¦  ©¦          aspect.txt
+©¦  ©¦          dep.graph
+©¦  ©¦          polarity.txt
+©¦  ©¦          pos.txt
+©¦  ©¦          restaurant-to-device-prototype-tau3.txt
+©¦  ©¦          restaurant-to-laptop-prototype-tau3.txt
+©¦  ©¦          restaurant-to-restaurant-prototype-tau3.txt
+©¦  ©¦          restaurant-to-service-prototype-tau3.txt
+©¦  ©¦          sentence.txt
+©¦  ©¦          
+©¦  ©¸©¤service
+©¦      ©À©¤test
+©¦      ©¦      aspect.txt
+©¦      ©¦      dep.graph
+©¦      ©¦      polarity.txt
+©¦      ©¦      pos.txt
+©¦      ©¦      sentence.txt
+©¦      ©¦      service-to-device-prototype-tau3.txt
+©¦      ©¦      service-to-laptop-prototype-tau3.txt
+©¦      ©¦      service-to-restaurant-prototype-tau3.txt
+©¦      ©¦      service-to-service-prototype-tau3.txt
+©¦      ©¦      
+©¦      ©¸©¤train
+©¦              aspect.txt
+©¦              dep.graph
+©¦              polarity.txt
+©¦              pos.txt
+©¦              sentence.txt
+©¦              service-to-device-prototype-tau3.txt
+©¦              service-to-laptop-prototype-tau3.txt
+©¦              service-to-restaurant-prototype-tau3.txt
+©¦              service-to-service-prototype-tau3.txt
+©¦              
+©À©¤layers
+©¦  ©¦  attention.py
+©¦  ©¦  decnn_conv.py
+©¦  ©¦  dropout_backup_0406.py
+©¦  ©¦  dynamic_rnn.py
+©¦  ©¦  GraphConvolution.py
+©¦  ©¦  point_wise_feed_forward.py
+©¦  ©¦  racl_backup.py
+©¦  ©¦  racl_detach_backup.py
+©¦  ©¦  racl_layer.py
+©¦  ©¦  squeeze_embedding.py
+©¦  ©¦  __init__.py
+©¦  ©¦  
+©¦  ©¸©¤__pycache__
+©¦          decnn_conv.cpython-36.pyc
+©¦          dynamic_rnn.cpython-36.pyc
+©¦          GraphConvolution.cpython-36.pyc
+©¦          racl_layer.cpython-36.pyc
+©¦          __init__.cpython-36.pyc
+©¦          
+©À©¤log
+©¦  ©À©¤0.service-to-restaurant
+©¦  ©¦      BERT+CNN+BRIDGE-210407-152456.log
+©¦  ©¦      
+©¦  ©À©¤1.laptop-to-restaurant
+©¦  ©¦      BERT+CNN+BRIDGE-210407-140313.log
+©¦  ©¦      
+©¦  ©À©¤2.device-to-restaurant
+©¦  ©¦      BERT+CNN+BRIDGE-210407-160621.log
+©¦  ©¦      
+©¦  ©À©¤3.restaurant-to-service
+©¦  ©¦      BERT+CNN+BRIDGE-210407-164248.log
+©¦  ©¦      
+©¦  ©À©¤4.laptop-to-service
+©¦  ©¦      BERT+CNN+BRIDGE-210407-172417.log
+©¦  ©¦      
+©¦  ©À©¤5.device-to-service
+©¦  ©¦      BERT+CNN+BRIDGE-210407-175337.log
+©¦  ©¦      
+©¦  ©À©¤6.restaurant-to-laptop
+©¦  ©¦      BERT+CNN+BRIDGE-210407-144354.log
+©¦  ©¦      
+©¦  ©À©¤7.service-to-laptop
+©¦  ©¦      BERT+CNN+BRIDGE-210407-181842.log
+©¦  ©¦      
+©¦  ©À©¤8.restaurant-to-device
+©¦  ©¦      BERT+CNN+BRIDGE-210407-184806.log
+©¦  ©¦      
+©¦  ©¸©¤9.service-to-device
+©¦          BERT+CNN+BRIDGE-210407-192431.log
+©¦          
+©¸©¤models
+    ©¦  decnn_base.py
+    ©¦  model_bert_bridge.py
+    ©¦  
+    ©À©¤ASC
+    ©¦      aen.py
+    ©¦      aoa.py
+    ©¦      atae_lstm.py
+    ©¦      bert_spc.py
+    ©¦      cabasc.py
+    ©¦      ian.py
+    ©¦      lcf_bert.py
+    ©¦      lstm.py
+    ©¦      memnet.py
+    ©¦      mgan.py
+    ©¦      ram.py
+    ©¦      td_lstm.py
+    ©¦      tnet_lf.py
+    ©¦      __init__.py
+    ©¦      
+    ©¸©¤__pycache__
+            decnn_base.cpython-36.pyc
+            
