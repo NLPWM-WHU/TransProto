@@ -7,7 +7,7 @@ Data and code will be released soon.
 
 Sorry for the late update.
 
-In the past half year, I be occupied with my Ph.D. dissertation. Thus the code release is postponed.
+In the past half year, I have be occupied with my Ph.D. dissertation. Thus the code release is postponed.
 
 The code and data are retrieved from my backups. If you have any problems when running, please feel free to raise an issue.
 
